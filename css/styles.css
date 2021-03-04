@@ -44,6 +44,7 @@ header .wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-basis: 160px;
   list-style: none;
   margin: 0.5em 0 1em;
   padding: 0;
@@ -115,6 +116,10 @@ option:disabled {
 textarea {
   resize: none;
 }
+
+input[id="zip"] {
+  width: 45%;
+}
   
 input,
 select,
@@ -138,6 +143,8 @@ textarea:focus {
   outline: none;
   border: 1px solid #712574;
   background: #f4ecf5;
+  transition: background-color 1s ease;
+  background-color: rgb(229, 207, 236);
 }
 
 input::placeholder,
@@ -207,6 +214,10 @@ fieldset div {
 
   label span {
     margin-bottom: 0;
+  }
+
+  input[id="zip"] {
+    width: 60%;
   }
 
   form > fieldset:nth-child(2) > div {
