@@ -1,0 +1,219 @@
+/* Body Styles */
+
+body {
+  font-size: 1em;
+  font-family: 'Noto Sans', sans-serif;
+  color: #494949;
+  line-height: 2;
+  }
+
+h1 {
+  font-size: 1.3em;
+  text-align: center;
+  letter-spacing: .2em;
+  color: #fff;
+  background-color: #712574;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.3em;
+  color: #4e4652;
+  margin: .5em 0 .5em;
+}
+
+p {
+  line-height: 1.4;
+}
+
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+header .wrapper {
+  text-align: center;
+  border-bottom: 4px solid #333;
+  padding: 1em 0;
+
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0.5em 0 1em;
+  padding: 0;
+}
+
+.flex li {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #fff;
+  background: #712574;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 20px;
+  width: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background: #a050a3;;
+}
+
+footer {
+  font-style: italic;
+  text-align: center;
+  padding: 1.5em 0 1em;
+}
+
+/* Form Styles */
+
+form {
+  border-top: 2px solid #333;
+  margin-top: 3px;
+  padding: 2em 0 0;
+}
+
+legend {
+  font-size: 1em;
+  line-height: 1.3;
+  font-weight: bold;
+  color: #712574;
+  text-align: left;
+  padding-top: 2em;
+}
+
+label span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select {
+  color: #000;
+}
+
+option:disabled {
+  color: #ccc7c7;
+}
+
+textarea {
+  resize: none;
+}
+  
+input,
+select,
+textarea {
+  box-sizing: border-box;
+  display: block;
+  line-height: 1.5;
+  background: #ececec;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 8px;
+  width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #712574;
+  background: #f4ecf5;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-style: normal;
+  text-align: left;
+  color: #c5c5c5;
+}
+  
+input#name::placeholder,
+input#email::placeholder {
+  text-align: right;
+  font-style: italic;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  align-self: center;
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+  outline: 2px solid #712574;
+}
+  
+fieldset {
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+fieldset div {
+  margin-top: 1.2em;
+  display: flex;
+  flex-direction: column;
+}
+
+ 
+  
+/* Larger Screen Styles */
+  
+@media screen and (min-width: 768px) {
+
+  .wrapper {
+    max-width: 75%;
+  }
+
+  h1 {
+    font-size: 2.7em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  fieldset div {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  label {
+    width: 60%;
+  }
+
+  label span {
+    margin-bottom: 0;
+  }
+
+  form > fieldset:nth-child(2) > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+  
